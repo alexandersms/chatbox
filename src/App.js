@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
+import Formulaire from "./components/Formulaire";
+import Message from "./components/Message";
 
 class App extends Component {
   render() {
     return (
       <div className="box">
-        <h2>Titre</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti
-          voluptatum reiciendis doloremque? Aliquam, dolor esse? Iste, possimus
-          nulla. Sequi nostrum quia, atque nihil iusto placeat dolor dolores
-          tenetur earum.
-        </p>
+        <div>
+          <div className="messages">
+            <Message />
+          </div>
+        </div>
+        <Formulaire />
       </div>
     );
   }
